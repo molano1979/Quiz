@@ -1,3 +1,9 @@
 :root {
     background-color: lightblue;
+    font-family: 'Sanchez', serif;
+}
+
+#intro {
+    text-align: center;
+    color:blueviolet;
 }
