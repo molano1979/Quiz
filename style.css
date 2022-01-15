@@ -1,7 +1,3 @@
-style.css/* CSS Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    position: relative;
+:root {
+    background-color: lightblue;
 }
