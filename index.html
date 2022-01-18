@@ -15,12 +15,17 @@
 <body>
     <div id="intro">
         <h1>Welcome to The Quiz!</h1>
-        <h2>What is your name?</h2> <br>
-        <input>
+        <h2 id="headerText">What is your name?</h2> <br>
+        
     </div>
 
-    <script src="js/questions.js"></script>
-    <script src="js/quiz.js"></script>
+    <div>
+        <input id="userName">
+        <button onclick="greeting()">Submit</button>
+    </div>
+
+    <script src="./questions.js"></script>
+    <script src="./quiz.js"></script>
 </body>
 
 </html>
