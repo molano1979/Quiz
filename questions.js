@@ -6,6 +6,8 @@ var answerA = document.querySelector("#answerA");
 var answerB = document.querySelector("#answerB");
 var answerC = document.querySelector("#answerC");
 var answerD = document.querySelector("#answerD");
+var qnChoice = "";
+var score = 0;
 
 
 
@@ -24,6 +26,7 @@ function aFunction() {
     answerB.style.color = "black";
     answerC.style.color = "black";
     answerD.style.color = "black";
+    qnChoice = "a";
 }
 
 function bFunction() {
@@ -31,6 +34,7 @@ function bFunction() {
     answerB.style.color = "red";
     answerC.style.color = "black";
     answerD.style.color = "black";
+    qnChoice = "b";
 }
 
 function cFunction() {
@@ -38,6 +42,7 @@ function cFunction() {
     answerB.style.color = "black";
     answerC.style.color = "red";
     answerD.style.color = "black";
+    qnChoice = "c";
 }
 
 function dFunction() {
@@ -45,4 +50,12 @@ function dFunction() {
     answerB.style.color = "black";
     answerC.style.color = "black";
     answerD.style.color = "red";
+    qnChoice = "d";
+}
+
+function submitQn1() {
+if (qnChoice == "b") {
+    score += 1;
+}
+console.log (score);
 }
