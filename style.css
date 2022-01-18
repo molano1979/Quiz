@@ -1,19 +1,8 @@
 :root {
-    background-color: lightblue;
-    font-family: 'Sanchez', serif;
-}
-
-#intro {
     text-align: center;
-
 }
 
-#greetingInput {
-text-align: center;
-
-}
-  
-#quiz {
-    text-align: center;
+body {
+    background-color: lightskyblue;
 }
 

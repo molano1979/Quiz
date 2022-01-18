@@ -5,43 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Quiz</title>
+    <title>Quiz</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="intro">
-        <h1>Welcome to The Quiz!</h1>
+
+    <div id"intro">
+        <h1>The Quiz</h1>
         <h2 id="headerText">What is your name?</h2> <br>
 
     </div>
-
     <div id="greetingInput">
         <input id="userName"> <br><br>
         <button onclick="greeting()">Submit</button>
     </div>
 
-    <div id="quiz">
-        <h3 id="question"></h3>
-        <div id="answerA" onclick="aFunction()">North America</div>
-        <div id="answerB" onclick="bFunction()">South America</div>
-        <div id="answerC" onclick="cFunction()">Europe</div>
-        <div id="answerD" onclick="dFunction()">Africa</div> <br>
-
-        <div id="qn1Button" onclick="submitQn1()"><button>Submit 1</button></div>
-        <div id="qn2Button" onclick="submitQn2()"><button>Submit 2</button></div>
-        <div id="qn3Button" onclick="submitQn3()"><button>Submit 3</button></div>
-        <div id="qn4Button" onclick="submitQn4()"><button>Submit 4</button></div>
-        <div id="qn5Button" onclick="submitQn5()"><button>Submit 5</button></div>
-        <div id="qn6Button" onclick="submitQn6()"><button>Submit 6</button></div>
-    
+    <div id="startButton">
+        <button onclick="startquiz()">Start</button>
     </div>
 
-    <script src="./questions.js"></script>
-    <script src="./quiz.js"></script>
+    <div id="quiz">
+        <h3 id="question">Qn1: In what European city is the Ifle Tower?</h3>
+        <div id="answerA">Paris</div>
+        <div id="answerB">Chicago</div>
+        <div id="answerC">London</div>
+        <div id="answerD">Tampa</div> <br>
+        <div id="qn1Button"><button>Submit Qn1</button> </div>
+
+        <script src="./questions.js"></script>
+        <script src="./quiz.js"></script>
 </body>
 
 </html>
