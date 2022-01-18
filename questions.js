@@ -21,4 +21,28 @@ function greeting() {
 
 function aFunction() {
     answerA.style.color = "red";
+    answerB.style.color = "black";
+    answerC.style.color = "black";
+    answerD.style.color = "black";
+}
+
+function bFunction() {
+    answerA.style.color = "black";
+    answerB.style.color = "red";
+    answerC.style.color = "black";
+    answerD.style.color = "black";
+}
+
+function cFunction() {
+    answerA.style.color = "black";
+    answerB.style.color = "black";
+    answerC.style.color = "red";
+    answerD.style.color = "black";
+}
+
+function dFunction() {
+    answerA.style.color = "black";
+    answerB.style.color = "black";
+    answerC.style.color = "black";
+    answerD.style.color = "red";
 }
