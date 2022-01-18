@@ -6,22 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Quiz</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="intro">
         <h1>Welcome to The Quiz!</h1>
         <h2 id="headerText">What is your name?</h2> <br>
-        
+
     </div>
 
     <div id="greetingInput">
         <input id="userName"> <br><br>
         <button onclick="greeting()">Submit</button>
+    </div>
+
+    <div id="quiz">
+        <h3 id="question">1: In which continent are Chile, Colombia, Argentina and Brazil?</h3>
+        <div id="answerA" onclick="aFunction()">North America</div>
+        <div id="answerB" onclick="bFunction()">South America</div>
+        <div id="answerC" onclick="cFunction()">Europe</div>
+        <div id="answerD" onclick="dFunction()">Africa</div> <br>
+
+        <div id="qn1Button"><button>Submit 1</button></div>
     </div>
 
     <script src="./questions.js"></script>
