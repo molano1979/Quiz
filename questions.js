@@ -16,8 +16,8 @@ var score = 0;
 
 var questionList = [
 "1. In which city is the Ifle Tower?",
-"2. What is the capital for France? ",
-"3. What European city borders Paris? "
+"2. What is the capital for England? ",
+"3. What city borders San Antonio? "
 
 ]
 
@@ -79,3 +79,25 @@ qn1Button.style.display = "none";
 qn2Button.style.display = "block";
 
 }
+
+function submitQn2() {
+    if (qnChoice == "b") {
+        score += 1;
+    }
+    iterationNumber += 1;
+    question.innerHTML = questionList[iterationNumber];
+    qn2Button.style.display = "none";
+    qn3Button.style.display = "block";
+    
+    }
+
+    function submitQn3() {
+        if (qnChoice == "d") {
+            score += 1;
+        }
+        iterationNumber += 1;
+        headerText.innerHTML = "Your score is " + score;
+        quiz.style.display = "none";
+
+        
+        }
