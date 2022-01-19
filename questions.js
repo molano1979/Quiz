@@ -32,6 +32,21 @@ qn1Button.style.display = "none";
 qn2Button.style.display = "none";
 qn3Button.style.display = "none";
 
+function reset () {
+    answerA.style.color = "darkslateblue";
+    answerB.style.color = "darkslateblue";
+    answerC.style.color = "darkslateblue";
+    answerD.style.color = "darkslateblue";
+    
+    question.innerHTML = questionList[iterationNumber];
+    answerA.innerHTML = aAnswerList[iterationNumber];
+    answerB.innerHTML = bAnswerList[iterationNumber];
+    answerC.innerHTML = cAnswerList[iterationNumber];
+    answerD.innerHTML = dAnswerList[iterationNumber];
+
+
+}
+
 
 function greeting() {
     headerText.innerHTML = ""
@@ -88,17 +103,10 @@ function submitQn1() {
     qn1Button.style.display = "none";
     qn2Button.style.display = "block";
     iterationNumber += 1;
+
+    reset()
     
-    answerA.style.color = "darkslateblue";
-    answerB.style.color = "darkslateblue";
-    answerC.style.color = "darkslateblue";
-    answerD.style.color = "darkslateblue";
-    
-    question.innerHTML = questionList[iterationNumber];
-    answerA.innerHTML = aAnswerList[iterationNumber];
-    answerB.innerHTML = bAnswerList[iterationNumber];
-    answerC.innerHTML = cAnswerList[iterationNumber];
-    answerD.innerHTML = dAnswerList[iterationNumber];
+   
 
 
 }
@@ -111,16 +119,7 @@ function submitQn2() {
     qn3Button.style.display = "block";
     iterationNumber += 1;
     
-    answerA.style.color = "darkslateblue";
-    answerB.style.color = "darkslateblue";
-    answerC.style.color = "darkslateblue";
-    answerD.style.color = "darkslateblue";
-    
-    question.innerHTML = questionList[iterationNumber];
-    answerA.innerHTML = aAnswerList[iterationNumber];
-    answerB.innerHTML = bAnswerList[iterationNumber];
-    answerC.innerHTML = cAnswerList[iterationNumber];
-    answerD.innerHTML = dAnswerList[iterationNumber];
+    reset()
 
     
     
@@ -136,16 +135,7 @@ function submitQn3() {
     headerText.innerHTML = "Your score is " + score;
     quiz.style.display = "none";
     
-    answerA.style.color = "darkslateblue";
-    answerB.style.color = "darkslateblue";
-    answerC.style.color = "darkslateblue";
-    answerD.style.color = "darkslateblue";
-
-    answerA.innerHTML = aAnswerList[iterationNumber];
-    answerB.innerHTML = bAnswerList[iterationNumber];
-    answerC.innerHTML = cAnswerList[iterationNumber];
-    answerD.innerHTML = dAnswerList[iterationNumber];
-
+   reset()
 
 
 }
