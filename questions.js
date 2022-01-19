@@ -21,10 +21,10 @@ var questionList = [
 
 ]
 
-let aAnswerList = ["Paris", "Chicago", "Houston"]
-let bAnswerList = ["Africa", "London", "Bogota"]
-let cAnswerList = ["Orlando", "Houston", "Austin"]
-let dAnswerList = ["New Mexico", "Texas", "Achorage"]
+var aAnswerList = ["Paris", "Chicago", "Houston"]
+var bAnswerList = ["Africa", "London", "Bogota"]
+var cAnswerList = ["Orlando", "Houston", "Austin"]
+var dAnswerList = ["New Mexico", "Texas", "Achorage"]
 
 
 quiz.style.display = "none";
