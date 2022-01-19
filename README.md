@@ -23,5 +23,5 @@ Website URL:[Quiz](https://molano1979.github.io/Quiz/)
 
 ## Application screenshots
 ![Quiz](./intropage.png)
-![Quiz](./quizpage.png)
+![Quiz](./quizscreenshot.png)
 ![Quiz](./scorepage.png)
