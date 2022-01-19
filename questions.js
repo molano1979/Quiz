@@ -15,11 +15,17 @@ var qnChoice = "";
 var score = 0;
 
 var questionList = [
-"1. In which city is the Ifle Tower?",
-"2. What is the capital for England? ",
-"3. What city borders San Antonio? "
+    "1. In which city is the Ifle Tower?",
+    "2. What is the capital for England? ",
+    "3. What city borders San Antonio? "
 
 ]
+
+let aAnswerList = ["Paris", "Chicago", "Houston"]
+let bAnswerList = ["Africa", "London", "Bogota"]
+let cAnswerList = ["Orlando", "Houston", "Austin"]
+let dAnswerList = ["New Mexico", "Texas", "Achorage"]
+
 
 quiz.style.display = "none";
 qn1Button.style.display = "none";
@@ -34,6 +40,12 @@ function greeting() {
     quiz.style.display = "block";
     qn1Button.style.display = "block";
     question.innerHTML = questionList[iterationNumber];
+    answerA.innerHTML = aAnswerList[iterationNumber];
+    answerB.innerHTML = bAnswerList[iterationNumber];
+    answerC.innerHTML = cAnswerList[iterationNumber];
+    answerD.innerHTML = dAnswerList[iterationNumber];
+
+  
 
 }
 
@@ -70,13 +82,24 @@ function dFunction() {
 }
 
 function submitQn1() {
-if (qnChoice == "a") {
-    score += 1;
-}
-iterationNumber += 1;
-question.innerHTML = questionList[iterationNumber];
-qn1Button.style.display = "none";
-qn2Button.style.display = "block";
+    if (qnChoice == "a") {
+        score += 1;
+    }
+    qn1Button.style.display = "none";
+    qn2Button.style.display = "block";
+    iterationNumber += 1;
+    
+    answerA.style.color = "darkslateblue";
+    answerB.style.color = "darkslateblue";
+    answerC.style.color = "darkslateblue";
+    answerD.style.color = "darkslateblue";
+    
+    question.innerHTML = questionList[iterationNumber];
+    answerA.innerHTML = aAnswerList[iterationNumber];
+    answerB.innerHTML = bAnswerList[iterationNumber];
+    answerC.innerHTML = cAnswerList[iterationNumber];
+    answerD.innerHTML = dAnswerList[iterationNumber];
+
 
 }
 
@@ -84,20 +107,45 @@ function submitQn2() {
     if (qnChoice == "b") {
         score += 1;
     }
-    iterationNumber += 1;
-    question.innerHTML = questionList[iterationNumber];
     qn2Button.style.display = "none";
     qn3Button.style.display = "block";
+    iterationNumber += 1;
     
+    answerA.style.color = "darkslateblue";
+    answerB.style.color = "darkslateblue";
+    answerC.style.color = "darkslateblue";
+    answerD.style.color = "darkslateblue";
+    
+    question.innerHTML = questionList[iterationNumber];
+    answerA.innerHTML = aAnswerList[iterationNumber];
+    answerB.innerHTML = bAnswerList[iterationNumber];
+    answerC.innerHTML = cAnswerList[iterationNumber];
+    answerD.innerHTML = dAnswerList[iterationNumber];
+
+    
+    
+
+
+}
+
+function submitQn3() {
+    if (qnChoice == "c") {
+        score += 1;
     }
+    iterationNumber += 1;
+    headerText.innerHTML = "Your score is " + score;
+    quiz.style.display = "none";
+    
+    answerA.style.color = "darkslateblue";
+    answerB.style.color = "darkslateblue";
+    answerC.style.color = "darkslateblue";
+    answerD.style.color = "darkslateblue";
 
-    function submitQn3() {
-        if (qnChoice == "d") {
-            score += 1;
-        }
-        iterationNumber += 1;
-        headerText.innerHTML = "Your score is " + score;
-        quiz.style.display = "none";
+    answerA.innerHTML = aAnswerList[iterationNumber];
+    answerB.innerHTML = bAnswerList[iterationNumber];
+    answerC.innerHTML = cAnswerList[iterationNumber];
+    answerD.innerHTML = dAnswerList[iterationNumber];
 
-        
-        }
+
+
+}
