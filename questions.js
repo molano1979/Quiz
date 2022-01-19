@@ -15,7 +15,7 @@ var qnChoice = "";
 var score = 0;
 
 var questionList = [
-    "1. In which city is the Ifle Tower?",
+    "1. In which city is the Eiffel Tower?",
     "2. What is the capital for England? ",
     "3. What city borders San Antonio? "
 
